@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Form from "./form";
 
 type CounterProps = {
   title: string;
@@ -28,6 +29,13 @@ const Counter = ({ title }: CounterProps) => {
   );
 };
 
-const App = () => <Counter title="count: " />;
+const App = () => {
+  return (
+    <div>
+      <Counter title="count: " />
+      <Form />
+    </div>
+  );
+};
 
 export default App;
